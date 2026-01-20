@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Library | Shanumovies.lk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="movie-page">
+
+    <header>
+        <div class="logo">SHANUMOVIES<span>.LK</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" class="active">Movies</a>
+            <a href="#" class="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Latest Movies</h2>
+
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <div class="poster-container">
+                    <img src="https://image.tmdb.org/t/p/w500/q719jXXLsVp68uUuC38pbu69uQN.jpg" alt="Movie Poster">
+                    <div class="rating">⭐ 8.5</div>
+                </div>
+                <div class="movie-info">
+                    <h3>The Dark Knight</h3>
+                    <p>Action | English</p>
+                    
+                    <div class="action-section">
+                        <div class="download-links">
+                            <a href="#" class="d-link">720p (Direct)</a>
+                            <a href="#" class="d-link">1080p (Direct)</a>
+                        </div>
+                        
+                        <div class="buy-area">
+                            <span class="price">LKR 450</span>
+                            <button class="btn-cart" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster-container">
+                    <img src="https://image.tmdb.org/t/p/w500/8GxvA9zT0U7nbp9S96ZpzdYpZpZ.jpg" alt="Movie Poster">
+                    <div class="rating">⭐ 7.9</div>
+                </div>
+                <div class="movie-info">
+                    <h3>Inception</h3>
+                    <p>Sci-Fi | English</p>
+                    
+                    <div class="action-section">
+                        <div class="download-links">
+                            <a href="#" class="d-link">720p (Direct)</a>
+                            <a href="#" class="d-link">1080p (Direct)</a>
+                        </div>
+                        <div class="buy-area">
+                            <span class="price">LKR 500</span>
+                            <button class="btn-cart" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        function addToCart() {
+            count++;
+            document.getElementById('cart-count').innerText = count;
+            alert("Movie eka Cart ekata damma!");
+        }
+    </script>
+
+</body>
+</html>

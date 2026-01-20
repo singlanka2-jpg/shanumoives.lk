@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Library | Shanumovies.lk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="movie-page">
+
+    <header>
+        <div class="logo">SHANUMOVIES<span>.LK</span></div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#" class="active">Movies</a>
+            <a href="#" class="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="section-title">Latest Movies</h2>
+
+        <div class="movie-grid">
+            
+            <div class="movie-card">
+                <div class="poster-container">
+                    <img src="images.jfif" alt="Sayyara Hindi With Sub Title)">
+                    <div class="rating">⭐ 8.5</div>
+                </div>
+                <div class="movie-info">
+                    <h3>Sayyara Hindi With Sub Title</h3>
+                    <p>Lovely | Hindi</p>
+                    
+                    <div class="action-section">
+                        <div class="download-links">
+                            <a href="https://mega.nz/file/DRtlhJYD#Yo2bDx0-0INyUidULfZSl5-qKC6FZomeXLrnZh57AYI" class="d-link">720p (Direct)</a>
+                            <a href="https://mega.nz/file/WZlBAQgC#J9HAcR_kj0Oz1HfEzBBPQMafuUgGBQWY8eYb671eCkY" class="d-link">1080p (Direct)</a>
+                        </div>
+                        
+                        <div class="buy-area">
+                            <span class="price">LKR Free</span>
+                            <button class="btn-cart" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="movie-card">
+                <div class="poster-container">
+                    <img src="images (2).jfif" alt="Movie Poster">
+                    <div class="rating">⭐ 7.9</div>
+                </div>
+                <div class="movie-info">
+                    <h3>Ronth (2025) Sinhala Subtitles | රාත්‍රී මුර සංචාර</h3>
+                    <p>Sci-Fi | English</p>
+                    
+                    <div class="action-section">
+                        <div class="download-links">
+                            <a href="https://usersdrive.com/dmilal51tgef.html" class="d-link">720p (Direct)</a>
+                            <a href="https://usersdrive.com/r99l99abnoyz.html" class="d-link">1080p (Direct)</a>
+                        </div>
+                        <div class="buy-area">
+                            <span class="price">LKR Free</span>
+                            <button class="btn-cart" onclick="addToCart()">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        function addToCart() {
+            count++;
+            document.getElementById('cart-count').innerText = count;
+            alert("Movie eka Cart ekata damma!");
+        }
+    </script>
+
+</body>
+</html>
